@@ -1,0 +1,20 @@
+CREATE TABLE `c_products` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(400) NOT NULL,
+  `price` int(10) unsigned NOT NULL,
+  `r_items` varchar(4000) NOT NULL,
+  `date` datetime NOT NULL,
+  `source` varchar(200) NOT NULL,
+  `html_src` longtext,
+  `also_like` varchar(4000) DEFAULT NULL,
+  `buy_and_buy` varchar(4000) DEFAULT NULL,
+  `see_and_see` varchar(4000) DEFAULT NULL,
+  `source_pid` varchar(200) DEFAULT NULL,
+  `version` varchar(10) DEFAULT NULL,
+  `classify` varchar(200) DEFAULT NULL,
+  `original_price` int(10) unsigned DEFAULT NULL,
+  `origin` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `source_pid` (`source_pid`),
+  KEY `p_name` (`name`(255))
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
